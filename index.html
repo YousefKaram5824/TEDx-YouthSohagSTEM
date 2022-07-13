@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4aa55a34fd.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <title>Document</title>
+</head>
+<body onload="initializeApp();">
+    <header>
+        <a href="https://www.facebook.com/TEDxYouth-Sohag-STEM-111017281538130/" class="logo"><h2 id="word"><span>TEDx</span>Youth@SohagSTEM</h2></a>
+        <nav>
+            <ul>
+                <li><a href="https://www.facebook.com/TEDxYouth-Sohag-STEM-111017281538130/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="contentBx">
+            <h2>Time Out!<img src="timer3.png" alt=""></h2>
+                <p>Having you among us makes all more than happy, so hurry to secure your place before the timer runs out. <br> we are waiting for you.</p>            
+                <div class="countdown">
+                <div class="time"><div id="day"></div><span>Days</span></div>
+                <div class="time"><div id="hour"></div><span>Hours</span></div>
+                <div class="time"><div id="minute"></div><span>Minutes</span></div>
+                <div class="time"><div id="second"></div><span>Seconds</span></div>
+            </div>
+            <a href="#" onclick="toggle();">Notify Me!</a>
+        </div>
+        <div class="imgBx">
+            <img src="CLOCK.png">
+        </div>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/events/743723100164668/?mibextid=7ovdaX"><img src="facebook.png"></a></li>
+        </ul>
+    </section>
+    <div class="newsletter">
+        <h2>Stay Tuned</h2>
+        <p>Get notified at launch</p>
+        <div class="inputBox">
+            <form id="contactForm" >
+                <input type="email" id="email" name="email" required="" placeholder="Enter Email Address">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <img src="close.png" class="close" onclick="toggle();">
+    </div>
+        <script src="main.js"></script>
+</body>
+</html>
